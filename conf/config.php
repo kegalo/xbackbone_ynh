@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'base_url' => 'https://__DOMAIN____PATH__', // no trailing slash
+    'base_url' => 'https://__DOMAIN____PATH__',
+    'storage' => [
+        'driver' => 'local',
+        'path'   => '__DATA_DIR__/storage',
+    ],
     'db'       => [
         'connection' => 'sqlite',
         'dsn'        => '__INSTALL_DIR__/resources/database/xbackbone.db',
         'username'   => null,
         'password'   => null,
-    ],
-    'storage' => [
-        'driver' => 'local',
-        'path'   => '__INSTALL_DIR__/storage',
-    ],
+    ]
 ];
