@@ -24,10 +24,20 @@ then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir"
+	ynh_setup_source --dest_dir="$install_dir" --keep="config.php"
 fi
 
 chown -R $app:www-data "$install_dir"
+
+#=================================================
+# XBACKBONE UPGRADE
+#=================================================
+ynh_script_progression --message="Install database" --weight=1
+
+pushd $install_dir
+	php$phpversion php/migrate --install
+	php$phpversion php/clean
+popd
 
 #=================================================
 # PHP-FPM CONFIGURATION
