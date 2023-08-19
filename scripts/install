@@ -15,7 +15,9 @@ source /usr/share/yunohost/helpers
 ynh_script_progression --message="Setting up source files..." --weight=1
 
 ynh_setup_source --dest_dir="$install_dir"
+
 mkdir "$install_dir/storage"
+
 chown -R $app:www-data "$install_dir"
 
 #=================================================
@@ -24,7 +26,7 @@ chown -R $app:www-data "$install_dir"
 ynh_script_progression --message="Configuring PHP-FPM..." --weight=1
 
 # Create a dedicated PHP-FPM config
-ynh_add_fpm_config
+ynh_add_fpm_config --usage=low --footprint=low
 
 #=================================================
 # NGINX CONFIGURATION
@@ -39,7 +41,7 @@ ynh_add_nginx_config
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="../conf/config.php" --destination="$install_dir/config.php"
+ynh_add_config --template="../conf/config_old.php" --destination="$install_dir/config.php"
 
 chmod 400 "$install_dir/config.php"
 chown $app:$app "$install_dir/config.php"

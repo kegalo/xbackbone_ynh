@@ -21,6 +21,6 @@ return array(
         'base_domain' => 'dc=yunohost,dc=org',
         'user_domain' => 'ou=Users',
         'rdn_attribute' => 'uid=',
-    ),
+    )
 );
 
