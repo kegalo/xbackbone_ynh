@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'app_name' => 'XBackBone',
     'base_url' => 'https://__DOMAIN____PATH__',
     'storage' => [
         'driver' => 'local',
