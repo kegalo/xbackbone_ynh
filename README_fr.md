@@ -16,15 +16,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-Some long and extensive description of what the app is and does, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-### Features
-
-- Ut enim ad minim veniam, quis nostrud exercitation ullamco ;
-- Laboris nisi ut aliquip ex ea commodo consequat ;
-- Duis aute irure dolor in reprehenderit in voluptate ;
-- Velit esse cillum dolore eu fugiat nulla pariatur ;
-- Excepteur sint occaecat cupidatat non proident, sunt in culpa."
+XBackBone est un gestionnaire de fichiers PHP simple et léger qui prend en charge l'outil de partage instantané des systèmes ShareX et NIX. Il prend en charge le téléchargement et l'affichage d'images, GIF, vidéo, code, texte formaté, pdf et téléchargement et téléchargement de fichiers. Disposez également d'une interface utilisateur Web avec gestion multi-utilisateurs, galerie multimédia et prise en charge de la recherche.
 
 
 **Version incluse :** 3.6.3~ynh1
