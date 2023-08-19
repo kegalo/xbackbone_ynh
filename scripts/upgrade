@@ -30,17 +30,22 @@ fi
 chown -R $app:www-data "$install_dir"
 
 #=================================================
+# XBACKBONE UPGRADE
+#=================================================
+ynh_script_progression --message="Install database" --weight=1
+
+pushd $install_dir
+	php$phpversion php/migrate --install
+	php$phpversion php/clean
+popd
+
+#=================================================
 # PHP-FPM CONFIGURATION
 #=================================================
 ynh_script_progression --message="Upgrading PHP-FPM configuration..." --weight=1
 
 # Create a dedicated PHP-FPM config
 ynh_add_fpm_config --usage=low --footprint=low
-
-#=================================================
-# NGINX CONFIGURATION
-#=================================================
-ynh_script_progression --message="Upgrading NGINX web server configuration..." --weight=1
 
 # Create a dedicated NGINX config
 ynh_add_nginx_config
