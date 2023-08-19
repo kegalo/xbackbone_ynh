@@ -11,7 +11,7 @@ maintainers = ["eric_G"]
 
 [upstream]
 license = "AGPL-3.0"
-website = "https://xbackbone.app/"
+admindoc = "https://xbackbone.app/"
 code = "https://github.com/SergiX44/XBackBone"
 
 [integration]
