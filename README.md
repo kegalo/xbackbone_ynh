@@ -35,7 +35,7 @@ Some long and extensive description of what the app is and does, lorem ipsum dol
 
 ## Documentation and resources
 
-* Official app website: <https://xbackbone.app/>
+* Official admin documentation: <https://xbackbone.app/>
 * Upstream app code repository: <https://github.com/SergiX44/XBackBone>
 * YunoHost documentation for this app: <https://yunohost.org/app_xbackbone>
 * Report a bug: <https://github.com/YunoHost-Apps/xbackbone_ynh/issues>
