@@ -13,6 +13,7 @@ maintainers = ["eric_G"]
 license = "AGPL-3.0"
 admindoc = "https://xbackbone.app/"
 code = "https://github.com/SergiX44/XBackBone"
+fund = "https://xbackbone.app/sponsor.html"
 
 [integration]
 yunohost = ">= 11.2"
