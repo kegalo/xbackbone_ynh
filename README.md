@@ -23,7 +23,7 @@ XBackBone is a simple and lightweight PHP file manager that support the instant 
 
 ## Screenshots
 
-![Screenshot of XBackBone](./doc/screenshots/example.jpg)
+![Screenshot of XBackBone](./doc/screenshots/screenshot.png)
 
 ## Documentation and resources
 
