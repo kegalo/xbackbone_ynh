@@ -15,7 +15,7 @@ source /usr/share/yunohost/helpers
 ynh_script_progression --message="Setting up source files..." --weight=1
 
 ynh_setup_source --dest_dir="$install_dir"
-#mkdir "$install_dir/storage"
+mkdir "$install_dir/storage"
 chown -R $app:www-data "$install_dir"
 
 #=================================================
