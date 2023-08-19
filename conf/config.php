@@ -5,7 +5,7 @@ return [
     'base_url' => 'https://__DOMAIN____PATH__',
     'storage' => [
         'driver' => 'local',
-        'path'   => '__DATA_DIR__/storage',
+        'path'   => '__DATA_DIR__',
     ],
     'db'       => [
         'connection' => 'sqlite',
