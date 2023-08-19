@@ -8,10 +8,12 @@ return array(
         'username' => '__BD_NAME__',
         'password' => '__BD_PWD__',
     ),
+
     'storage'  => array(
         'driver' => 'local',
         'path'   => '__DATA_DIR__',
     ),
+
     'ldap' => array(
         'enabled' => true,
         'schema' => 'ldap',
