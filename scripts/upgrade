@@ -35,7 +35,7 @@ chown -R $app:www-data "$install_dir"
 ynh_script_progression --message="Install database" --weight=1
 
 pushd $install_dir
-	php$phpversion php/migrate --install
+	php$phpversion php/migrate
 	php$phpversion php/clean
 popd
 
