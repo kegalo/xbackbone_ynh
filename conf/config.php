@@ -4,7 +4,7 @@ return [
     'base_url' => 'https://__DOMAIN____PATH__', // no trailing slash
     'storage' => [
         'driver' => 'local',
-        'path'   => '__INSTALL_DIR__/storage',
+        'path'   => '__DATA_DIR__/storage',
     ],
     'db'       => [
         'connection' => 'sqlite',

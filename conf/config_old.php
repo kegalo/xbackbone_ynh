@@ -16,11 +16,12 @@ return array(
 
     'ldap' => array(
         'enabled' => true,
+        'schema' => 'ldap',
         'host' => 'ldap://127.0.0.1',
         'port' => 389,
-        'base_domain' => 'dc=yunohost,dc=org',
+        'base_domain' => 'dc=yunohost,dc=org', 
+        'search_filter' => '(&(|(objectclass=posixAccount))(uid={{username}})(permission=cn=__APP__.main,ou=permission,dc=yunohost,dc=org))',
         'user_domain' => 'ou=Users',
         'rdn_attribute' => 'uid=',
-    )
+    ),
 );
-
